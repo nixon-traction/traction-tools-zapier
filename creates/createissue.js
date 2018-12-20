@@ -21,6 +21,9 @@ const createissue = (z, bundle) => {
   });
 };
 
+
+
+
 module.exports = {
   key: 'create_issue',
   noun: 'Create Issue',
@@ -31,6 +34,10 @@ module.exports = {
   },
 
   operation: {
+    sample: {
+      meetingId: 2131231,
+      name: 'L10 Meeting test'
+    },
     inputFields: [
       {key: 'meetingId', label:'Meeting ID', required: false},
       {key: 'title', label:'Title', required: true},
