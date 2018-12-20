@@ -20,6 +20,7 @@ const createmeeting = require('./creates/createmeeting');
 
 const getlisttodos = require('./searches/getlisttodos');
 const getlistrock = require('./searches/getlistrock');
+const getlistofL10 = require('./searches/getlistlevel10');
 const authentication = require('./authentication');
 
 // To include the API key/secret/appId headers on all outbound requests, simply define a function here.
@@ -87,6 +88,7 @@ const App = {
   searches: {
     [getlisttodos.key]: getlisttodos,
     [getlistrock.key]: getlistrock,
+    [getlistofL10.key]: getlistofL10
   },
 
   // If you want your creates to show up, you better include it here!
